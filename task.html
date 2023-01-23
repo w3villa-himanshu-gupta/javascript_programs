@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task Array</h1>
+    <script>
+        let user=[ { name: "one", id: 1 },
+                   { name: "two", id: 2 },
+                   { name: "three",id:3}
+                ];
+    
+        let comments=[ { userId: 1, id: 1, msg: "hello id1" },
+                       { userId: 1, id: 2, msg: "hello id2" },
+                       { userId: 2, id: 3, msg: "hello id3" },
+                       { userId: 3, id: 4, msg: "hello id4" }
+                    ];
+        
+       
+        
+        console.log('before', user);
+        user.forEach(mergArray);  //
+        console.log('after', user);
+
+
+
+        function mergArray(z) {
+            console.log(z);
+            let comment = [];
+            for (let i = 0; i < comments.length; i++) {
+                if (comments[i].userId === z.id) {
+                    comment.push(comments[i].msg);
+                }
+            }
+            z.msg = comment;
+        };
+
+    </script>
+</body>
+</html>

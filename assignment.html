@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        
+    </script> -->
+    <h3>Using For loop</h3>
+     <script>
+        let post = [
+          { id: 1, title: "Hi", desc: "Hi,this is the first post" },
+          { id: 2, title: "Hlo", desc: "Hi,this is the Second post" },
+          { id: 3, title: "Hey", desc: "Hi,this is the third post" },
+        ];
+  
+        let comments =[
+          { msg:"Awesome Post",postId:1},
+          { msg:"Good Content",postId:1},
+          { msg:"Amazing",postId:2},
+          { msg:"wow",postId:3},
+          { msg:"Good one",postId:1},
+  
+        ];
+
+        // [1,2,3,3,2]
+        // [5,2,4,4,5]
+
+        
+        // post.forEach(Merging_comments);
+        // console.log('after',post);
+        
+        
+        for(let i=0;i<post.length;i++){
+            
+            let new_comment=[];
+            
+            for(let j=0;j<comments.length;j++){
+                if(post[i].id==comments[j].postId){
+                  new_comment.push(comments[j]);
+              }
+            
+              
+          }
+          post[i].comment = new_comment;
+         
+          
+          
+  
+        }
+        console.log(post);
+  
+      </script>
+      
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Arguements functions</h4>
+    <script>
+        function myConcat(separator) {
+        let result = ''; // initialize list
+        // iterate through arguments
+        for (let i = 1; i < arguments.length; i++) {
+             result += arguments[i] + separator;
+            }
+        return result;
+        }
+    </script>
+    <h2>Destructing</h2>
+    <script>
+    const foo = ['one', 'two', 'three']
+
+        // without destructuring
+        // const x   = foo[0];
+        // const y   = foo[1];
+        // const z = foo[2];
+        // document.write(x);
+        const[a,b,x]=foo;
+        document.write(b);
+        document.write("<br>");
+        
+        // with destructuring
+        // const [one, two, three] = foo;
+        const val=12;
+        const val2=13;
+        const val3 = !val && !!val2 ? true:false;
+        document.write(val3);
+
+
+        const xa=[1,3,4,5,6];
+        xa.forEach(color => console.log(color));
+        
+        </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Program</h1>
+    <script>
+        var flag;
+        var index;
+        var n = prompt("enter the array size");
+        var arr1 = new Array(4);
+        for(var g=0;g<n;g++){
+            arr1[g]= prompt("Enter the value of array");
+        }
+        document.write("<ol>");
+        for(var i=0;i<n;i++){
+         
+            document.write("<li>"+arr1[i]+"</li> ");
+           
+        }
+        document.write("</ol");
+        var x=prompt("enter the value which you want to be search");
+        for(var i=0;i<n;i++){
+         
+         if(search==arr1[i]){
+            flag=1;
+            index=i;
+            
+
+         }
+         else{
+            flag=0;
+         }
+        
+     }
+     if(flag==1){
+        document.write("Element is found at Index :"+ index);
+     }
+     else{
+        document.write("Element is not found");
+     }
+
+
+    </script>
+</body>
+</html>

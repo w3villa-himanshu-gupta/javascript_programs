@@ -1,0 +1,14 @@
+Given an array arr[] of n integers, where each integer is greater than 1. The task is to find the number of Full binary tree from the given integers, such that each non-leaf node value is the product of its children value.
+
+
+
+
+
+
+
+
+
+
+
+
+7455074520;
